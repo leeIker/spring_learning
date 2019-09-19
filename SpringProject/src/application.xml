@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans.xsd">
+  <bean id="lee" class="packageo.persono">
+  	<!--
+  	<property name="id"  value="1"></property>
+  	<property name="name"  value="lee"></property>
+  	<property name="age"  value="29"></property>
+  	<property name="father" ref="father"></property>
+  	-->
+  	<constructor-arg value="1"></constructor-arg>
+  	<constructor-arg value="he"></constructor-arg>
+  	<constructor-arg value="29"></constructor-arg>
+  	<constructor-arg ref="father"></constructor-arg>
+  </bean>
+  <bean id="father" class="packageo.Father">
+  	<property name="name" value="lee"></property>
+  	<property name="age" value="52"></property>
+  </bean>
+   
+</beans>
